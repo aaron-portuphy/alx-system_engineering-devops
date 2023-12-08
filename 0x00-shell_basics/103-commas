@@ -1,3 +1,2 @@
 #!/bin/bash
-ls -la | awk '{printf "%s%s", ($9 ~ /^\.{1,2}$/ ? $9 : $9 "/"), ", "}' | LC_COLLATE=C sort | sed 's/, $/\n/'
-
+ls -amvp
